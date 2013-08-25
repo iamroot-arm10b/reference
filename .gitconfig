@@ -1,0 +1,35 @@
+[user]
+	name = Name
+	email = id@gmail.com
+
+[core]
+	editor = /usr/local/bin/vim
+	quotepath = false
+	autocrlf = input
+	whitespace = trailing-space,space-before-tab,indent-with-non-tab
+
+[merge]
+	tool = vimdiff
+[mergetool "vimdiff"]
+	path = /usr/local/bin/vim
+
+[diff]
+	tool = vimdiff
+[difftool "vimdiff"]
+	path = /usr/local/bin/vim
+	
+[color]
+        ui = true
+
+[alias]
+	st = status -uno
+	co = checkout
+	br = branch
+	unstage = reset HEAD --
+	recover = reset HEAD^ 
+	last = log -1 HEAD --stat
+	view = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ad)%C(reset) %C(White)%s%C(reset) %C(bold white)<%an>%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=short 
+	tree = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ad)%C(reset) %C(White)%s%C(reset) %C(bold white)<%an>%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=short --author='iamroot 10 ARM-B' --author='iamroot 10th ARM-B' --author='Seunghwan Chun' --author=KGJ
+
+[gui]
+	encoding = utf-8
